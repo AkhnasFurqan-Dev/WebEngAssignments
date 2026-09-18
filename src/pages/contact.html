@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Hash Technologies | Software Inquiries & Technical Support</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Flowbite CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+</head>
+<body class="bg-[#FAF9F6] text-[#1F2421] antialiased flex flex-col min-h-screen">
+
+    <!-- Global Navigation Bar -->
+    <nav class="bg-[#FFFFFF] border-b border-[#E4E5E2] sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="../../index.html" class="flex items-center space-x-2.5">
+                <span class="flex items-center justify-center w-9 h-9 rounded-lg bg-[#C65D32] text-white font-extrabold text-xl shadow-sm">#</span>
+                <span class="self-center text-2xl font-bold tracking-tight text-[#1F2421]">Hash Technologies</span>
+            </a>
+            <div class="flex items-center md:order-2 space-x-3">
+                <a href="signin.html" class="text-[#66706B] hover:text-[#C65D32] font-medium text-sm px-4 py-2">Sign In</a>
+                <a href="signup.html" class="text-white bg-[#C65D32] hover:bg-[#963F24] font-medium rounded-lg text-sm px-5 py-2.5 transition shadow-sm">Get Access</a>
+                <button data-collapse-toggle="navbar-main" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-main">
+                                <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-[#E4E5E2] rounded-lg bg-[#FAF9F6] md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-[#FFFFFF]">
+                    <li><a href="../../index.html" class="block py-2 px-3 text-[#66706B] hover:text-[#C65D32] md:p-0">Home</a></li>
+                    <li><a href="about.html" class="block py-2 px-3 text-[#66706B] hover:text-[#C65D32] md:p-0">About</a></li>
+                    <li><a href="contact.html" class="block py-2 px-3 text-[#C65D32] font-semibold md:p-0" aria-current="page">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow">
+                <!-- 1. Flowbite Breadcrumb Component -->
+        <section class="bg-[#FAF9F6] border-b border-[#E4E5E2] py-3">
+            <div class="max-w-4xl mx-auto px-4">
+                <nav class="flex" aria-label="Breadcrumb">
+                    <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                        <li class="inline-flex items-center">
+                            <a href="../../index.html" class="inline-flex items-center text-xs font-medium text-[#66706B] hover:text-[#C65D32]">
+                                <svg class="w-3 h-3 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
+                                Home
+                            </a>
+                        </li>
+                        <li aria-current="page">
+                            <div class="flex items-center">
+                                <svg class="w-3 h-3 text-[#66706B] mx-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                                <span class="text-xs font-medium text-[#66706B]">Contact</span>
+                            </div>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Contact Section Header -->
+        <section class="py-12 bg-[#FFFFFF]">
+            <div class="max-w-4xl mx-auto px-4 text-center">
+                <span class="text-[#C65D32] font-bold text-xs uppercase tracking-wider">Inquiries & Partnerships</span>
+                <h1 class="text-3xl sm:text-4xl font-extrabold text-[#1F2421] mt-1">Get in Touch with Hash Technologies</h1>
+                <p class="text-[#66706B] mt-2 text-sm sm:text-base">
+                    Reach our technical architects regarding ATS deployment, custom API integrations, or company partnership.
+                </p>
+            </div>
+        </section>
+
+        <!-- 2. Flowbite SLA Alert Component -->
+        <div class="max-w-2xl mx-auto px-4 mb-6">
+            <div class="p-4 mb-4 text-sm text-[#963F24] rounded-lg bg-[#F4E3DA] border border-[#F4E3DA] flex items-center" role="alert">
+                <svg class="flex-shrink-0 inline w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+                <span class="font-medium">Direct Engineering SLA:</span>&nbsp;Technical inquiries receive a confirmation response within 1 business day.
+            </div>
+        </div>
+
+        <!-- 3. Flowbite Contact Form Component with Formspree Integration & Validation -->
+        <section class="max-w-2xl mx-auto px-4 pb-16">
+            <div class="bg-[#FFFFFF] p-6 sm:p-8 rounded-2xl border border-[#E4E5E2] shadow-sm">
+                <!-- Replace with your personal Formspree ID: https://formspree.io/f/{your-id} -->
+                <form id="contactForm" action="https://formspree.io/f/mzezzajb" method="POST" class="space-y-6" novalidate>
+                    <div>
+                        <label for="fullName" class="block mb-2 text-sm font-medium text-[#1F2421]">Your Full Name <span class="text-red-500">*</span></label>
+                        <input type="text" id="fullName" name="name" class="bg-[#FAF9F6] border border-[#E4E5E2] text-[#1F2421] text-sm rounded-lg focus:ring-[#C65D32] focus:border-[#C65D32] block w-full p-2.5 transition" placeholder="Alex Taylor" required minlength="2">
+                        <p class="hidden text-xs text-red-600 mt-1" id="nameError">Please enter your full name (minimum 2 characters).</p>
+                    </div>
+
+                    <div>
+                        <label for="email" class="block mb-2 text-sm font-medium text-[#1F2421]">Work Email <span class="text-red-500">*</span></label>
+                        <input type="email" id="email" name="email" class="bg-[#FAF9F6] border border-[#E4E5E2] text-[#1F2421] text-sm rounded-lg focus:ring-[#C65D32] focus:border-[#C65D32] block w-full p-2.5 transition" placeholder="alex@company.com" required>
+                        <p class="hidden text-xs text-red-600 mt-1" id="emailError">Please enter a valid business email address.</p>
+                    </div>
+
+                    <div>
+                        <label for="company" class="block mb-2 text-sm font-medium text-[#1F2421]">Organization / Company Name</label>
+                        <input type="text" id="company" name="company" class="bg-[#FAF9F6] border border-[#E4E5E2] text-[#1F2421] text-sm rounded-lg focus:ring-[#C65D32] focus:border-[#C65D32] block w-full p-2.5" placeholder="Acme Software Corp">
+                    </div>
+
+                    <div>
+                        <label for="inquiryType" class="block mb-2 text-sm font-medium text-[#1F2421]">Inquiry Classification <span class="text-red-500">*</span></label>
+                        <select id="inquiryType" name="inquiryType" class="bg-[#FAF9F6] border border-[#E4E5E2] text-[#1F2421] text-sm rounded-lg focus:ring-[#C65D32] focus:border-[#C65D32] block w-full p-2.5" required>
+                            <option value="">Select an inquiry type...</option>
+                            <option value="ATS-Demo">Request ATS Solution Demo</option>
+                            <option value="API-Integration">API Integration & Documentation</option>
+                            <option value="Custom-Engineering">Custom Enterprise Engineering</option>
+                            <option value="General-Support">General Inquiries</option>
+                        </select>
+                        <p class="hidden text-xs text-red-600 mt-1" id="typeError">Please select an inquiry type.</p>
+                    </div>
+
+                    <div>
+                        <label for="message" class="block mb-2 text-sm font-medium text-[#1F2421]">Message Description <span class="text-red-500">*</span></label>
+                        <textarea id="message" name="message" rows="5" class="block p-2.5 w-full text-sm text-[#1F2421] bg-[#FAF9F6] rounded-lg border border-[#E4E5E2] focus:ring-[#C65D32] focus:border-[#C65D32]" placeholder="Please describe your recruitment workflow requirements or engineering questions..." required minlength="10"></textarea>
+                        <p class="hidden text-xs text-red-600 mt-1" id="messageError">Please provide a message of at least 10 characters.</p>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="flex items-center h-5">
+                            <input id="consent" name="consent" type="checkbox" class="w-4 h-4 border border-[#E4E5E2] rounded bg-[#FAF9F6] focus:ring-3 focus:ring-[#C65D32]/20" required>
+                        </div>
+                        <label for="consent" class="ml-2 text-xs font-medium text-[#66706B]">I confirm the details provided are accurate for business communication.</label>
+                    </div>
+                    <p class="hidden text-xs text-red-600 -mt-3" id="consentError">You must confirm consent before submitting.</p>
+
+                    <button type="submit" id="submitBtn" class="w-full text-white bg-[#C65D32] hover:bg-[#963F24] font-medium rounded-lg text-sm px-5 py-3 text-center transition shadow-sm">
+                        Submit Message via Formspree
+                    </button>
+                </form>
+
+                <!-- 6. Form Submission Notification / Status Toast Container -->
+                <div id="formSuccessToast" class="hidden mt-6 p-4 text-sm text-[#477A5B] rounded-lg bg-green-50 border border-[#477A5B]/20">
+                    <span class="font-bold">Message Ready!</span> Submitting to Formspree endpoints...
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Flowbite Contact Information Cards Component -->
+        <section class="py-12 bg-[#FAF9F6] border-t border-[#E4E5E2]">
+            <div class="max-w-5xl mx-auto px-4">
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="p-6 bg-[#FFFFFF] rounded-xl border border-[#E4E5E2] text-center">
+                        <div class="w-10 h-10 bg-[#F4E3DA] text-[#C65D32] rounded-lg flex items-center justify-center mx-auto mb-3 font-bold">@</div>
+                        <h4 class="font-bold text-[#1F2421] mb-1">Electronic Inquiries</h4>
+                        <p class="text-xs text-[#66706B]">contact@hash Technologies.company</p>
+                    </div>
+                    <div class="p-6 bg-[#FFFFFF] rounded-xl border border-[#E4E5E2] text-center">
+                        <div class="w-10 h-10 bg-[#F4E3DA] text-[#C65D32] rounded-lg flex items-center justify-center mx-auto mb-3 font-bold">&lt;/&gt;</div>
+                        <h4 class="font-bold text-[#1F2421] mb-1">Developer Portal</h4>
+                        <p class="text-xs text-[#66706B]">docs@hash Technologies.company</p>
+                    </div>
+                    <div class="p-6 bg-[#FFFFFF] rounded-xl border border-[#E4E5E2] text-center">
+                        <div class="w-10 h-10 bg-[#F4E3DA] text-[#C65D32] rounded-lg flex items-center justify-center mx-auto mb-3 font-bold">⏱</div>
+                        <h4 class="font-bold text-[#1F2421] mb-1">Engineering Hours</h4>
+                        <p class="text-xs text-[#66706B]">Mon - Fri: 09:00 - 18:00 PKT</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Flowbite Accordion Component -->
+        <section class="py-12 bg-[#FFFFFF]">
+            <div class="max-w-3xl mx-auto px-4">
+                <h3 class="text-xl font-bold text-[#1F2421] text-center mb-6">Contact & Support Details</h3>
+                <div class="space-y-3">
+                    <details class="p-4 bg-[#FAF9F6] rounded-lg border border-[#E4E5E2]">
+                        <summary class="font-semibold text-sm text-[#1F2421] cursor-pointer list-none flex justify-between">
+                            <span>How does the Formspree endpoint handle our message?</span>
+                            <span class="text-[#C65D32] font-bold">+</span>
+                        </summary>
+                        <p class="text-xs text-[#66706B] mt-2 leading-relaxed">
+                            Form submissions are transmitted through Formspree's secure form routing API, dispatching an immediate structured alert to our team without exposing private mail credentials.
+                        </p>
+                    </details>
+                    <details class="p-4 bg-[#FAF9F6] rounded-lg border border-[#E4E5E2]">
+                        <summary class="font-semibold text-sm text-[#1F2421] cursor-pointer list-none flex justify-between">
+                            <span>Can we schedule an ATS architecture demonstration?</span>
+                            <span class="text-[#C65D32] font-bold">+</span>
+                        </summary>
+                        <p class="text-xs text-[#66706B] mt-2 leading-relaxed">
+                            Yes. Select "Request ATS Solution Demo" in the classification dropdown above, and an engineer will schedule a technical walkthrough.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <!-- Global Footer -->
+    <footer class="bg-[#1F2421] text-[#66706B] py-12 border-t border-[#66706B]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="space-y-4">
+                <a href="../../index.html" class="flex items-center space-x-2 text-white">
+                    <span class="flex items-center justify-center w-7 h-7 rounded bg-[#C65D32] text-white font-extrabold text-sm">#</span>
+                    <span class="text-xl font-bold tracking-tight">Hash Technologies</span>
+                </a>
+                <p class="text-xs text-[#66706B] leading-relaxed">
+                    Hash Technologies develops software systems and modern AI-enabled recruitment solutions for forward-thinking organizations.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-white text-sm font-semibold mb-3">Navigation</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="../../index.html" class="hover:text-white transition">Home</a></li>
+                    <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                    <li><a href="contact.html" class="hover:text-white transition">Contact Support</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white text-sm font-semibold mb-3">Portal</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="signin.html" class="hover:text-white transition">Sign In</a></li>
+                    <li><a href="signup.html" class="hover:text-white transition">Create Account</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white text-sm font-semibold mb-3">Architecture</h4>
+                <p class="text-xs text-[#66706B] leading-relaxed">
+                    Compliant with University Web Engineering Assignment 01 guidelines.
+                </p>
+                <span class="inline-block mt-3 text-[11px] text-[#66706B]">© 2026 Hash Technologies Software Inc.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Form Validation Script -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            let isValid = true;
+
+            // Name validation
+            const nameInput = document.getElementById('fullName');
+            const nameError = document.getElementById('nameError');
+            if (!nameInput.value.trim() || nameInput.value.trim().length < 2) {
+                nameError.classList.remove('hidden');
+                nameInput.classList.add('border-red-500');
+                isValid = false;
+            } else {
+                nameError.classList.add('hidden');
+                nameInput.classList.remove('border-red-500');
+            }
+
+            // Email validation
+            const emailInput = document.getElementById('email');
+            const emailError = document.getElementById('emailError');
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(emailInput.value.trim())) {
+                emailError.classList.remove('hidden');
+                emailInput.classList.add('border-red-500');
+                isValid = false;
+            } else {
+                emailError.classList.add('hidden');
+                emailInput.classList.remove('border-red-500');
+            }
+
+            // Inquiry Type validation
+            const typeInput = document.getElementById('inquiryType');
+            const typeError = document.getElementById('typeError');
+            if (!typeInput.value) {
+                typeError.classList.remove('hidden');
+                typeInput.classList.add('border-red-500');
+                isValid = false;
+            } else {
+                typeError.classList.add('hidden');
+                typeInput.classList.remove('border-red-500');
+            }
+
+            // Message validation
+            const messageInput = document.getElementById('message');
+            const messageError = document.getElementById('messageError');
+            if (!messageInput.value.trim() || messageInput.value.trim().length < 10) {
+                messageError.classList.remove('hidden');
+                messageInput.classList.add('border-red-500');
+                isValid = false;
+            } else {
+                messageError.classList.add('hidden');
+                messageInput.classList.remove('border-red-500');
+            }
+
+            // Consent validation
+            const consentInput = document.getElementById('consent');
+            const consentError = document.getElementById('consentError');
+            if (!consentInput.checked) {
+                consentError.classList.remove('hidden');
+                isValid = false;
+            } else {
+                consentError.classList.add('hidden');
+            }
+
+            if (!isValid) {
+                e.preventDefault();
+            } else {
+                document.getElementById('formSuccessToast').classList.remove('hidden');
+            }
+        });
+    </script>
+    <!-- Flowbite JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+</body>
+</html>

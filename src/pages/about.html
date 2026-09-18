@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Hash Technologies | Software Engineering & Recruitment Solutions</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Flowbite CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+</head>
+<body class="bg-[#FAF9F6] text-[#1F2421] antialiased flex flex-col min-h-screen">
+
+    <!-- Global Navigation Bar -->
+    <nav class="bg-[#FFFFFF] border-b border-[#E4E5E2] sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="../../index.html" class="flex items-center space-x-2.5">
+                <span class="flex items-center justify-center w-9 h-9 rounded-lg bg-[#C65D32] text-white font-extrabold text-xl shadow-sm">#</span>
+                <span class="self-center text-2xl font-bold tracking-tight text-[#1F2421]">Hash Technologies</span>
+            </a>
+            <div class="flex items-center md:order-2 space-x-3">
+                <a href="signin.html" class="text-[#66706B] hover:text-[#C65D32] font-medium text-sm px-4 py-2">Sign In</a>
+                <a href="signup.html" class="text-white bg-[#C65D32] hover:bg-[#963F24] font-medium rounded-lg text-sm px-5 py-2.5 transition shadow-sm">Get Access</a>
+                <button data-collapse-toggle="navbar-main" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-main">
+                <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-[#E4E5E2] rounded-lg bg-[#FAF9F6] md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-[#FFFFFF]">
+                    <li><a href="../../index.html" class="block py-2 px-3 text-[#1F2421] hover:text-[#C65D32] md:p-0">Home</a></li>
+                    <li><a href="about.html" class="block py-2 px-3 text-[#C65D32] font-semibold md:p-0" aria-current="page">About</a></li>
+                    <li><a href="contact.html" class="block py-2 px-3 text-[#1F2421] hover:text-[#C65D32] md:p-0">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow">
+        <!-- 1. About Header Component -->
+        <section class="py-16 bg-gradient-to-b from-[#F4E3DA]/60 to-[#FFFFFF] border-b border-[#E4E5E2]">
+            <div class="max-w-4xl mx-auto px-4 text-center space-y-4">
+                <span class="text-[#C65D32] font-bold text-xs uppercase tracking-wider">Company Profile</span>
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-[#1F2421] tracking-tight">Engineering Modern Recruitment Systems</h1>
+                <p class="text-lg text-[#66706B] leading-relaxed">
+                    Hash Technologies is a technology and software development company focused on building intelligent, modular solutions for modern talent acquisition and applicant workflow management.
+                </p>
+            </div>
+        </section>
+
+        <!-- 2. Company Purpose & Problem Solving -->
+        <section class="py-16 bg-[#FFFFFF]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <span class="text-[#C65D32] font-bold text-xs uppercase tracking-wider">Our Purpose</span>
+                        <h2 class="text-3xl font-extrabold text-[#1F2421] mt-2 mb-4">Why Hash Technologies Exists</h2>
+                        <p class="text-[#66706B] leading-relaxed mb-4">
+                            Recruitment is fundamental to every growing organization, yet traditional software solutions have remained rigid, opaque, and difficult to customize.
+                        </p>
+                        <p class="text-[#66706B] leading-relaxed">
+                            Hash Technologies develops reliable, developer-friendly software solutions that combine AI-assisted candidate parsing with clean, transparent applicant pipelines. We build systems that organizations can deploy in days, not quarters.
+                        </p>
+                    </div>
+                    <div class="p-8 bg-[#F4E3DA] rounded-2xl border border-[#F4E3DA] space-y-4">
+                        <h3 class="font-bold text-xl text-[#1F2421]">Our Strategic Focus</h3>
+                        <ul class="space-y-3 text-sm text-[#1F2421]">
+                            <li class="flex items-start"><span class="text-[#C65D32] font-bold mr-2">✓</span> Modular SaaS architectures adaptable across small businesses and agencies.</li>
+                            <li class="flex items-start"><span class="text-[#C65D32] font-bold mr-2">✓</span> Objective AI scoring algorithms that reduce hiring latency and cognitive load.</li>
+                            <li class="flex items-start"><span class="text-[#C65D32] font-bold mr-2">✓</span> Open API standards for seamless enterprise data interoperability.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Statistics Component (System Capabilities) -->
+        <section class="py-12 bg-[#FAF9F6] border-y border-[#E4E5E2]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                    <div class="p-4 bg-[#FFFFFF] rounded-xl border border-[#E4E5E2] shadow-xs">
+                        <div class="text-3xl font-extrabold text-[#C65D32]">99.9%</div>
+                        <div class="text-xs text-[#66706B] font-medium mt-1">Target API Reliability</div>
+                    </div>
+                    <div class="p-4 bg-[#FFFFFF] rounded-xl border border-[#E4E5E2] shadow-xs">
+                        <div class="text-3xl font-extrabold text-[#C65D32]">&lt;150ms</div>
+                        <div class="text-xs text-[#66706B] font-medium mt-1">Ingestion Engine Latency</div>
+                    </div>
+                    <div class="p-4 bg-[#FFFFFF] rounded-xl border border-[#E4E5E2] shadow-xs">
+                        <div class="text-3xl font-extrabold text-[#C65D32]">Zero</div>
+                        <div class="text-xs text-[#66706B] font-medium mt-1">Vendor Lock-In</div>
+                    </div>
+                    <div class="p-4 bg-[#FFFFFF] rounded-xl border border-[#E4E5E2] shadow-xs">
+                        <div class="text-3xl font-extrabold text-[#C65D32]">Tier-1</div>
+                        <div class="text-xs text-[#66706B] font-medium mt-1">Data Privacy Standard</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Timeline Component (Development Trajectory) -->
+        <section class="py-16 bg-[#FFFFFF]">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <span class="text-[#C65D32] font-bold text-xs uppercase tracking-wider">Evolution</span>
+                    <h2 class="text-3xl font-extrabold text-[#1F2421] mt-1">Engineering Milestone Roadmap</h2>
+                </div>
+                <ol class="relative border-s border-[#F4E3DA] ml-4 space-y-10">
+                    <li class="ms-6">
+                        <span class="absolute flex items-center justify-center w-6 h-6 bg-[#C65D32] rounded-full -start-3 ring-8 ring-[#FFFFFF] text-white text-xs font-bold">1</span>
+                        <h3 class="flex items-center mb-1 text-lg font-bold text-[#1F2421]">Foundation Architecture</h3>
+                        <time class="block mb-2 text-xs font-normal leading-none text-[#66706B]">Phase 1 — Core Web Foundation</time>
+                        <p class="text-sm text-[#66706B] leading-relaxed">Establish the core brand identity, component conventions, multi-page layout, and responsive HTML/CSS structures.</p>
+                    </li>
+                    <li class="ms-6">
+                        <span class="absolute flex items-center justify-center w-6 h-6 bg-[#C65D32] rounded-full -start-3 ring-8 ring-[#FFFFFF] text-white text-xs font-bold">2</span>
+                        <h3 class="text-lg font-bold text-[#1F2421] mb-1">ATS Ingestion & Pipeline Logic</h3>
+                        <time class="block mb-2 text-xs font-normal leading-none text-[#66706B]">Phase 2 — System Integration</time>
+                        <p class="text-sm text-[#66706B] leading-relaxed">Develop relational candidate schemas, pipeline workflow automation, and resume parsing normalization endpoints.</p>
+                    </li>
+                    <li class="ms-6">
+                        <span class="absolute flex items-center justify-center w-6 h-6 bg-[#C65D32] rounded-full -start-3 ring-8 ring-[#FFFFFF] text-white text-xs font-bold">3</span>
+                        <h3 class="text-lg font-bold text-[#1F2421] mb-1">AI Matching & Analytics Suite</h3>
+                        <time class="block mb-2 text-xs font-normal leading-none text-[#66706B]">Phase 3 — Intelligence Layer</time>
+                        <p class="text-sm text-[#66706B] leading-relaxed">Integrate multi-model AI adapters for automated skills extraction, screening assistance, and objective viability scoring.</p>
+                    </li>
+                    <li class="ms-6">
+                        <span class="absolute flex items-center justify-center w-6 h-6 bg-[#C65D32] rounded-full -start-3 ring-8 ring-[#FFFFFF] text-white text-xs font-bold">4</span>
+                        <h3 class="text-lg font-bold text-[#1F2421] mb-1">Enterprise Cloud & API Scaling</h3>
+                        <time class="block mb-2 text-xs font-normal leading-none text-[#66706B]">Phase 4 — Scaled Operations</time>
+                        <p class="text-sm text-[#66706B] leading-relaxed">Release dedicated workspace tenancies, custom white-label portals, and regional compliance storage options.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- 5. Core Values Component -->
+        <section class="py-16 bg-[#FAF9F6] border-t border-[#E4E5E2]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <span class="text-[#C65D32] font-bold text-xs uppercase tracking-wider">Culture</span>
+                    <h2 class="text-3xl font-extrabold text-[#1F2421] mt-1">Our Engineering Principles</h2>
+                </div>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="p-6 bg-[#FFFFFF] rounded-xl border border-[#E4E5E2]">
+                        <h3 class="font-bold text-[#1F2421] mb-2">Simplicity First</h3>
+                        <p class="text-sm text-[#66706B]">We prioritize intuitive workflows over feature bloat. Software should empower talent teams, not require weeks of training.</p>
+                    </div>
+                    <div class="p-6 bg-[#FFFFFF] rounded-xl border border-[#E4E5E2]">
+                        <h3 class="font-bold text-[#1F2421] mb-2">Objective & Unbiased AI</h3>
+                        <p class="text-sm text-[#66706B]">Our machine learning models score viability purely on demonstrated competence and role criteria, guarding against algorithmic bias.</p>
+                    </div>
+                    <div class="p-6 bg-[#FFFFFF] rounded-xl border border-[#E4E5E2]">
+                        <h3 class="font-bold text-[#1F2421] mb-2">Architectural Integrity</h3>
+                        <p class="text-sm text-[#66706B]">We build on normalized relational data foundations and high-speed API layers, ensuring long-term operational resilience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Technical Architecture Accordion Component -->
+        <section class="py-16 bg-[#FFFFFF]">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-10">
+                    <span class="text-[#C65D32] font-bold text-xs uppercase tracking-wider">Deep Dive</span>
+                    <h2 class="text-3xl font-extrabold text-[#1F2421] mt-1">Platform Architecture Overview</h2>
+                </div>
+                <div class="space-y-4">
+                    <details class="group bg-[#FAF9F6] p-5 rounded-xl border border-[#E4E5E2]" open>
+                        <summary class="flex justify-between items-center font-bold text-[#1F2421] cursor-pointer list-none">
+                            <span>Ingestion & Document Parsing Subsystem</span>
+                            <span class="text-[#C65D32] group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <p class="text-[#66706B] text-sm mt-3 leading-relaxed">
+                            Converts PDFs, Word documents, and text files into standard JSON structures, extracting contact records, employment histories, and key qualifications.
+                        </p>
+                    </details>
+                    <details class="group bg-[#FAF9F6] p-5 rounded-xl border border-[#E4E5E2]">
+                        <summary class="flex justify-between items-center font-bold text-[#1F2421] cursor-pointer list-none">
+                            <span>Multi-Model AI Scoring Layer</span>
+                            <span class="text-[#C65D32] group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <p class="text-[#66706B] text-sm mt-3 leading-relaxed">
+                            Assesses candidate competency matrices against customizable role rubrics using modular LLM adapters, producing transparent scoring rationale.
+                        </p>
+                    </details>
+                    <details class="group bg-[#FAF9F6] p-5 rounded-xl border border-[#E4E5E2]">
+                        <summary class="flex justify-between items-center font-bold text-[#1F2421] cursor-pointer list-none">
+                            <span>Secure Webhook & Notification Engine</span>
+                            <span class="text-[#C65D32] group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <p class="text-[#66706B] text-sm mt-3 leading-relaxed">
+                            Dispatches instant payloads to internal communication channels, applicant email notification queues, and external ERPs when pipeline state updates occur.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Global Footer -->
+    <footer class="bg-[#1F2421] text-[#66706B] py-12 border-t border-[#66706B]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="space-y-4">
+                <a href="../../index.html" class="flex items-center space-x-2 text-white">
+                    <span class="flex items-center justify-center w-7 h-7 rounded bg-[#C65D32] text-white font-extrabold text-sm">#</span>
+                    <span class="text-xl font-bold tracking-tight">Hash Technologies</span>
+                </a>
+                <p class="text-xs text-[#66706B] leading-relaxed">
+                    Hash Technologies develops software systems and modern AI-enabled recruitment solutions for forward-thinking organizations.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-white text-sm font-semibold mb-3">Navigation</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="../../index.html" class="hover:text-white transition">Home</a></li>
+                    <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                    <li><a href="contact.html" class="hover:text-white transition">Contact Support</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white text-sm font-semibold mb-3">Portal</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="signin.html" class="hover:text-white transition">Sign In</a></li>
+                    <li><a href="signup.html" class="hover:text-white transition">Create Account</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white text-sm font-semibold mb-3">Architecture</h4>
+                <p class="text-xs text-[#66706B] leading-relaxed">
+                    Compliant with University Web Engineering Assignment 01 guidelines.
+                </p>
+                <span class="inline-block mt-3 text-[11px] text-[#66706B]">© 2026 Hash Technologies Software Inc.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Flowbite JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+</body>
+</html>

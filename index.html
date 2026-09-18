@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hash Technologies | Next-Gen AI Recruitment & ATS Infrastructure</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Flowbite CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#C65D32',
+                            dark: '#963F24',
+                        },
+                        text: {
+                            main: '#1F2421',
+                            secondary: '#66706B',
+                        },
+                        bg: {
+                            warm: '#FAF9F6',
+                            surface: '#FFFFFF',
+                            'soft-orange': '#F4E3DA',
+                        },
+                        border: {
+                            soft: '#E4E5E2',
+                        },
+                        accent: {
+                            green: '#477A5B',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#FAF9F6] text-[#1F2421] antialiased flex flex-col min-h-screen">
+
+    <!-- Global Navigation Bar -->
+    <nav class="bg-[#FFFFFF] border-b border-[#E4E5E2] sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="index.html" class="flex items-center space-x-2.5">
+                <span class="flex items-center justify-center w-9 h-9 rounded-lg bg-[#C65D32] text-white font-extrabold text-xl shadow-sm">#</span>
+                <span class="self-center text-2xl font-bold tracking-tight text-[#1F2421]">Hash Technologies</span>
+            </a>
+            <div class="flex items-center md:order-2 space-x-3">
+                <a href="src/pages/signin.html" class="text-[#66706B] hover:text-[#C65D32] font-medium text-sm px-4 py-2">Sign In</a>
+                <a href="src/pages/signup.html" class="text-white bg-[#C65D32] hover:bg-[#963F24] font-medium rounded-lg text-sm px-5 py-2.5 transition shadow-sm">Get Access</a>
+                <button data-collapse-toggle="navbar-main" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-main">
+                <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-[#E4E5E2] rounded-lg bg-[#FAF9F6] md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-[#FFFFFF]">
+                    <li><a href="index.html" class="block py-2 px-3 text-[#C65D32] font-semibold md:p-0" aria-current="page">Home</a></li>
+                    <li><a href="src/pages/about.html" class="block py-2 px-3 text-[#1F2421] hover:text-[#C65D32] md:p-0">About</a></li>
+                    <li><a href="src/pages/contact.html" class="block py-2 px-3 text-[#1F2421] hover:text-[#C65D32] md:p-0">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow">
+        <!-- Hero Section (Tailwind Hero Component) -->
+        <section class="bg-gradient-to-b from-[#F4E3DA]/50 to-[#FFFFFF] py-16 lg:py-24 border-b border-[#E4E5E2]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-7 space-y-6">
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#1F2421] tracking-tight leading-tight">
+                            Intelligent ATS Solutions. Built for Modern Teams.
+                        </h1>
+                        <p class="text-lg text-[#66706B] max-w-2xl leading-relaxed">
+                            Hash Technologies engineers robust software systems and AI-enabled Applicant Tracking solutions. Eliminate fragmented legacy workflows with automated resume parsing, multi-stage pipelines, and plug-and-play API integrations.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                            <a href="src/pages/signup.html" class="inline-flex justify-center items-center px-6 py-3.5 text-base font-semibold text-white bg-[#C65D32] rounded-lg hover:bg-[#963F24] shadow-md hover:shadow transition">
+                                Start Free Workspace
+                                <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                            </a>
+                            <a href="src/pages/about.html" class="inline-flex justify-center items-center px-6 py-3.5 text-base font-semibold text-[#1F2421] bg-[#FFFFFF] border border-[#E4E5E2] rounded-lg hover:bg-[#FAF9F6] transition">
+                                Explore Architecture
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Hero Visual Preview Component -->
+                    <div class="lg:col-span-5">
+                        <div class="bg-gray-900 p-6 rounded-2xl shadow-2xl border border-gray-800 text-white font-mono text-sm relative overflow-hidden">
+                            <div class="flex items-center space-x-2 pb-4 mb-4 border-b border-gray-800">
+                                <span class="w-3 h-3 rounded-full bg-red-500 inline-block"></span>
+                                <span class="w-3 h-3 rounded-full bg-yellow-500 inline-block"></span>
+                                <span class="w-3 h-3 rounded-full bg-green-500 inline-block"></span>
+                                <span class="text-xs text-gray-400 pl-2">hash Technologies-ats-pipeline.json</span>
+                            </div>
+                            <pre class="text-xs text-[#F4E3DA] overflow-x-auto"><code>{
+  "service": "Hash Technologies ATS Engine",
+  "pipeline_status": "Active",
+  "active_candidates": 412,
+  "ai_parser_latency": "94ms",
+  "match_accuracy": "96.4%",
+  "stages": [
+    "Sourced",
+    "Screening",
+    "Technical Review",
+    "Hired"
+  ]
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 1. Architecture Ecosystem & Integration Bar -->
+        <section class="py-10 bg-[#FAF9F6] border-b border-[#E4E5E2]">
+            <div class="max-w-7xl mx-auto px-4 text-center">
+                <p class="text-xs uppercase tracking-widest text-[#66706B] font-bold mb-6">Designed to Integrate with Modern HR & Tech Stacks</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-center opacity-75">
+                    <div class="p-3 bg-[#FFFFFF] rounded-lg border border-[#E4E5E2] font-semibold text-[#1F2421] shadow-sm">REST & GraphQL APIs</div>
+                    <div class="p-3 bg-[#FFFFFF] rounded-lg border border-[#E4E5E2] font-semibold text-[#1F2421] shadow-sm">Webhooks Dispatcher</div>
+                    <div class="p-3 bg-[#FFFFFF] rounded-lg border border-[#E4E5E2] font-semibold text-[#1F2421] shadow-sm">SOC-2 Data Pipelines</div>
+                    <div class="p-3 bg-[#FFFFFF] rounded-lg border border-[#E4E5E2] font-semibold text-[#1F2421] shadow-sm">Multi-Model AI Adapters</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Value Proposition (2-Column Comparison Card) -->
+        <section class="py-16 bg-[#FFFFFF]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="p-8 bg-[#F4E3DA] rounded-2xl border border-[#F4E3DA]">
+                        <span class="text-[#C65D32] font-bold text-sm tracking-wide uppercase">The Problem We Solve</span>
+                        <h2 class="text-3xl font-extrabold text-[#1F2421] mt-2 mb-4">Eliminating Legacy Recruitment Friction</h2>
+                        <p class="text-[#66706B] leading-relaxed mb-4">
+                            Traditional enterprises are frequently locked into bloated legacy platforms that take months to deploy, while smaller teams struggle with disjointed single-purpose tools.
+                        </p>
+                        <p class="text-[#66706B] leading-relaxed">
+                            Hash Technologies provides modern recruitment software, bridging this divide with high-throughput candidate processing delivered via modular software and accessible API integration.
+                        </p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="p-5 bg-[#FFFFFF] border border-[#E4E5E2] rounded-xl shadow-sm flex items-start space-x-4">
+                            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-red-100 text-red-600 flex items-center justify-center font-bold">✕</span>
+                            <div>
+                                <h3 class="font-bold text-[#1F2421]">Legacy Systems</h3>
+                                <p class="text-sm text-[#66706B]">Rigid database schemas, high annual contracts, and zero modern AI integration.</p>
+                            </div>
+                        </div>
+                        <div class="p-5 bg-[#C65D32] text-white rounded-xl shadow-md flex items-start space-x-4">
+                            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFFFFF] text-[#C65D32] flex items-center justify-center font-bold">✓</span>
+                            <div>
+                                <h3 class="font-bold">The Hash Technologies Solution</h3>
+                                <p class="text-sm text-[#F4E3DA]">AI-driven resume parsing, modular pipeline views, and developer-friendly REST endpoints.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Core Capabilities (6-Card Feature Grid) -->
+        <section class="py-16 bg-[#FAF9F6] border-y border-[#E4E5E2]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <span class="text-[#C65D32] font-semibold uppercase text-sm tracking-wider">Features & Tooling</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-[#1F2421] mt-2">Comprehensive Recruitment Management</h2>
+                    <p class="text-[#66706B] mt-3">From intake to final job offer, our software standardizes every stage of the talent lifecycle.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-[#FFFFFF] p-6 rounded-xl border border-[#E4E5E2] shadow-sm hover:border-[#C65D32] transition">
+                        <div class="w-12 h-12 bg-[#F4E3DA] rounded-lg flex items-center justify-center text-[#C65D32] font-bold mb-4">01</div>
+                        <h3 class="text-xl font-bold text-[#1F2421] mb-2">Automated Resume Parsing</h3>
+                        <p class="text-sm text-[#66706B]">Extract unstructured skills, education, and career milestones into normalized candidate profiles in milliseconds.</p>
+                    </div>
+                    <div class="bg-[#FFFFFF] p-6 rounded-xl border border-[#E4E5E2] shadow-sm hover:border-[#C65D32] transition">
+                        <div class="w-12 h-12 bg-[#F4E3DA] rounded-lg flex items-center justify-center text-[#C65D32] font-bold mb-4">02</div>
+                        <h3 class="text-xl font-bold text-[#1F2421] mb-2">AI Viability Scoring</h3>
+                        <p class="text-sm text-[#66706B]">Score incoming applicants against bespoke role benchmarks without biased heuristics or manual screening delay.</p>
+                    </div>
+                    <div class="bg-[#FFFFFF] p-6 rounded-xl border border-[#E4E5E2] shadow-sm hover:border-[#C65D32] transition">
+                        <div class="w-12 h-12 bg-[#F4E3DA] rounded-lg flex items-center justify-center text-[#C65D32] font-bold mb-4">03</div>
+                        <h3 class="text-xl font-bold text-[#1F2421] mb-2">Pipeline Automation</h3>
+                        <p class="text-sm text-[#66706B]">Trigger interview invitations, feedback requests, and status notifications automatically as candidates advance.</p>
+                    </div>
+                    <div class="bg-[#FFFFFF] p-6 rounded-xl border border-[#E4E5E2] shadow-sm hover:border-[#C65D32] transition">
+                        <div class="w-12 h-12 bg-[#F4E3DA] rounded-lg flex items-center justify-center text-[#C65D32] font-bold mb-4">04</div>
+                        <h3 class="text-xl font-bold text-[#1F2421] mb-2">Team Interview Scorecards</h3>
+                        <p class="text-sm text-[#66706B]">Centralize interviewer feedback and structured rubrics to make objective, collaborative hiring choices.</p>
+                    </div>
+                    <div class="bg-[#FFFFFF] p-6 rounded-xl border border-[#E4E5E2] shadow-sm hover:border-[#C65D32] transition">
+                        <div class="w-12 h-12 bg-[#F4E3DA] rounded-lg flex items-center justify-center text-[#C65D32] font-bold mb-4">05</div>
+                        <h3 class="text-xl font-bold text-[#1F2421] mb-2">REST & Webhook APIs</h3>
+                        <p class="text-sm text-[#66706B]">Integrate candidate feeds directly into your internal tools, custom portals, or reporting warehouses.</p>
+                    </div>
+                    <div class="bg-[#FFFFFF] p-6 rounded-xl border border-[#E4E5E2] shadow-sm hover:border-[#C65D32] transition">
+                        <div class="w-12 h-12 bg-[#F4E3DA] rounded-lg flex items-center justify-center text-[#C65D32] font-bold mb-4">06</div>
+                        <h3 class="text-xl font-bold text-[#1F2421] mb-2">Compliance & Data Audits</h3>
+                        <p class="text-sm text-[#66706B]">Keep end-to-end recruitment audit trails with GDPR compliance, encrypted storage, and data isolation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Visual ATS Pipeline Demonstration (Kanban Preview Component) -->
+        <section class="py-16 bg-[#FFFFFF]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-10">
+                    <span class="text-[#C65D32] font-bold text-xs uppercase tracking-wider">Interface Preview</span>
+                    <h2 class="text-3xl font-extrabold text-[#1F2421] mt-1">Multi-Stage Candidate Pipelines</h2>
+                </div>
+                <div class="bg-[#FAF9F6] border border-[#E4E5E2] rounded-2xl p-6 shadow-sm overflow-x-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 min-w-[700px]">
+                        <div class="bg-[#FFFFFF] p-4 rounded-xl border border-[#E4E5E2] shadow-xs">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="font-bold text-sm text-[#1F2421]">1. Sourced</span>
+                                <span class="bg-[#E4E5E2] text-[#66706B] text-xs px-2 py-0.5 rounded-full font-semibold">18</span>
+                            </div>
+                            <div class="p-3 bg-[#FAF9F6] rounded-lg border border-[#E4E5E2] mb-2">
+                                <p class="font-semibold text-xs text-[#1F2421]">Senior Backend Engineer</p>
+                                <p class="text-[11px] text-[#66706B]">Score: 94% · AI Match</p>
+                            </div>
+                        </div>
+                        <div class="bg-[#FFFFFF] p-4 rounded-xl border border-[#E4E5E2] shadow-xs">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="font-bold text-sm text-[#1F2421]">2. Screening</span>
+                                <span class="bg-[#F4E3DA] text-[#C65D32] text-xs px-2 py-0.5 rounded-full font-semibold">6</span>
+                            </div>
+                            <div class="p-3 bg-[#F4E3DA] rounded-lg border border-[#F4E3DA] mb-2">
+                                <p class="font-semibold text-xs text-[#1F2421]">Lead Product Designer</p>
+                                <p class="text-[11px] text-[#C65D32]">Screening scheduled</p>
+                            </div>
+                        </div>
+                        <div class="bg-[#FFFFFF] p-4 rounded-xl border border-[#E4E5E2] shadow-xs">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="font-bold text-sm text-[#1F2421]">3. Technical Review</span>
+                                <span class="bg-[#E4E5E2] text-[#66706B] text-xs px-2 py-0.5 rounded-full font-semibold">4</span>
+                            </div>
+                            <div class="p-3 bg-[#FAF9F6] rounded-lg border border-[#E4E5E2] mb-2">
+                                <p class="font-semibold text-xs text-[#1F2421]">Full-Stack Developer</p>
+                                <p class="text-[11px] text-[#66706B]">Review pending</p>
+                            </div>
+                        </div>
+                        <div class="bg-[#FFFFFF] p-4 rounded-xl border border-[#E4E5E2] shadow-xs">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="font-bold text-sm text-[#1F2421]">4. Offer Extended</span>
+                                <span class="bg-green-100 text-[#477A5B] text-xs px-2 py-0.5 rounded-full font-semibold">2</span>
+                            </div>
+                            <div class="p-3 bg-green-50 rounded-lg border border-[#477A5B]/20 mb-2">
+                                <p class="font-semibold text-xs text-[#1F2421]">DevOps Specialist</p>
+                                <p class="text-[11px] text-[#477A5B]">Signed letter sent</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Platform Capability Benchmarks (Statistics Component) -->
+        <section class="py-12 bg-[#1F2421] text-[#FFFFFF]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <div class="text-3xl lg:text-4xl font-extrabold text-[#C65D32]">&lt;120ms</div>
+                        <div class="text-xs uppercase tracking-wider text-[#66706B] mt-1">Average Parsing Latency</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl lg:text-4xl font-extrabold text-[#C65D32]">99.9%</div>
+                        <div class="text-xs uppercase tracking-wider text-[#66706B] mt-1">Uptime Target SLA</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl lg:text-4xl font-extrabold text-[#C65D32]">50+</div>
+                        <div class="text-xs uppercase tracking-wider text-[#66706B] mt-1">Resume File Formats</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl lg:text-4xl font-extrabold text-[#C65D32]">AES-256</div>
+                        <div class="text-xs uppercase tracking-wider text-[#66706B] mt-1">Data Layer Encryption</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Modular Services Beyond the ATS (Service Cards) -->
+        <section class="py-16 bg-[#FAF9F6] border-b border-[#E4E5E2]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <span class="text-[#C65D32] font-bold text-xs uppercase tracking-wider">Company Services</span>
+                    <h2 class="text-3xl font-extrabold text-[#1F2421] mt-1">Engineering Services Beyond Software</h2>
+                    <p class="text-[#66706B] mt-2">Hash Technologies partners with growing businesses to implement, customize, and optimize recruitment systems.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="p-6 bg-[#FFFFFF] rounded-xl border border-[#E4E5E2]">
+                        <h3 class="font-bold text-lg text-[#1F2421] mb-2">Bespoke Integration</h3>
+                        <p class="text-sm text-[#66706B]">Connect Hash Technologies endpoints directly with custom ERPs, internal HR portals, and proprietary company dashboards.</p>
+                    </div>
+                    <div class="p-6 bg-[#FFFFFF] rounded-xl border border-[#E4E5E2]">
+                        <h3 class="font-bold text-lg text-[#1F2421] mb-2">AI Model Fine-Tuning</h3>
+                        <p class="text-sm text-[#66706B]">Calibrate parsing algorithms to your specific industry vocabulary, engineering stacks, or regional certifications.</p>
+                    </div>
+                    <div class="p-6 bg-[#FFFFFF] rounded-xl border border-[#E4E5E2]">
+                        <h3 class="font-bold text-lg text-[#1F2421] mb-2">Dedicated Infrastructure</h3>
+                        <p class="text-sm text-[#66706B]">Isolated database containers and regional cloud deployments for institutions with strict sovereign data rules.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. 3-Step Deployment Sequence (Workflow Component) -->
+        <section class="py-16 bg-[#FFFFFF]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <span class="text-[#C65D32] font-bold text-xs uppercase tracking-wider">Onboarding</span>
+                    <h2 class="text-3xl font-extrabold text-[#1F2421] mt-1">How Hash Technologies Works</h2>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="relative p-6 border border-[#E4E5E2] rounded-xl bg-[#F4E3DA]/50">
+                        <span class="inline-block px-3 py-1 bg-[#C65D32] text-white rounded text-xs font-bold mb-3">Step 1</span>
+                        <h3 class="font-bold text-[#1F2421] mb-1">Create Workspace</h3>
+                        <p class="text-sm text-[#66706B]">Register your organization and generate API credentials through the Hash Technologies management portal.</p>
+                    </div>
+                    <div class="relative p-6 border border-[#E4E5E2] rounded-xl bg-[#F4E3DA]/50">
+                        <span class="inline-block px-3 py-1 bg-[#C65D32] text-white rounded text-xs font-bold mb-3">Step 2</span>
+                        <h3 class="font-bold text-[#1F2421] mb-1">Define Pipelines</h3>
+                        <p class="text-sm text-[#66706B]">Customize candidate stages, assessment rubrics, and automated status webhooks for each job family.</p>
+                    </div>
+                    <div class="relative p-6 border border-[#E4E5E2] rounded-xl bg-[#F4E3DA]/50">
+                        <span class="inline-block px-3 py-1 bg-[#C65D32] text-white rounded text-xs font-bold mb-3">Step 3</span>
+                        <h3 class="font-bold text-[#1F2421] mb-1">Scale Hiring</h3>
+                        <p class="text-sm text-[#66706B]">Ingest resumes, let AI surface top prospects, and collaborate across departments seamlessly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Enterprise Review (Testimonial Card Component) -->
+        <section class="py-14 bg-[#FAF9F6] border-y border-[#E4E5E2]">
+            <div class="max-w-4xl mx-auto px-4 text-center">
+                <div class="inline-flex text-[#C65D32] space-x-1 mb-4">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <blockquote class="text-xl font-semibold text-[#1F2421] italic">
+                    "Hash Technologies's modular approach allowed our recruitment operations to transition away from clunky enterprise tools in less than two weeks. Resume screening speed improved instantly."
+                </blockquote>
+                <div class="mt-4 text-sm">
+                    <span class="font-bold text-[#1F2421]">Engineering & Talent Lead</span>
+                    <span class="text-[#66706B]"> — Scaled Tech Solutions Group</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Tiered Plans Showcase (Pricing/Tier Component) -->
+        <section class="py-16 bg-[#FFFFFF]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <span class="text-[#C65D32] font-bold text-xs uppercase tracking-wider">Predictable Growth</span>
+                    <h2 class="text-3xl font-extrabold text-[#1F2421] mt-1">Flexible Architecture for Any Scale</h2>
+                    <p class="text-[#66706B] text-sm mt-2">Plans designed to scale with your organization's hiring volume.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <!-- Starter Tier -->
+                    <div class="p-6 bg-[#FFFFFF] border border-[#E4E5E2] rounded-2xl shadow-sm flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-bold text-xl text-[#1F2421]">In-House Starter</h3>
+                            <p class="text-xs text-[#66706B] mt-1">For focused internal recruitment teams</p>
+                            <ul class="my-6 space-y-3 text-sm text-[#66706B]">
+                                <li class="flex items-center"><span class="text-[#C65D32] mr-2">✓</span> Up to 5 Active Job Pipelines</li>
+                                <li class="flex items-center"><span class="text-[#C65D32] mr-2">✓</span> Standard AI Resume Parsing</li>
+                                <li class="flex items-center"><span class="text-[#C65D32] mr-2">✓</span> Email & Webhook Notifications</li>
+                            </ul>
+                        </div>
+                        <a href="src/pages/signup.html" class="block w-full py-2.5 text-center bg-[#FAF9F6] hover:bg-[#E4E5E2] text-[#1F2421] font-semibold rounded-lg text-sm transition">Select Starter</a>
+                    </div>
+                    <!-- Growth Tier -->
+                    <div class="p-6 bg-[#FFFFFF] border-2 border-[#C65D32] rounded-2xl shadow-md flex flex-col justify-between relative">
+                        <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#C65D32] text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">Recommended</span>
+                        <div>
+                            <h3 class="font-bold text-xl text-[#1F2421]">Professional Scale</h3>
+                            <p class="text-xs text-[#66706B] mt-1">For growing businesses and tech agencies</p>
+                            <ul class="my-6 space-y-3 text-sm text-[#66706B]">
+                                <li class="flex items-center"><span class="text-[#C65D32] mr-2">✓</span> Unlimited Job Pipelines</li>
+                                <li class="flex items-center"><span class="text-[#C65D32] mr-2">✓</span> Advanced Multi-Model AI Matching</li>
+                                <li class="flex items-center"><span class="text-[#C65D32] mr-2">✓</span> Team Collaborative Scorecards</li>
+                                <li class="flex items-center"><span class="text-[#C65D32] mr-2">✓</span> Dedicated API Access</li>
+                            </ul>
+                        </div>
+                        <a href="src/pages/signup.html" class="block w-full py-2.5 text-center bg-[#C65D32] hover:bg-[#963F24] text-white font-semibold rounded-lg text-sm transition shadow-sm">Select Professional</a>
+                    </div>
+                    <!-- Enterprise Tier -->
+                    <div class="p-6 bg-[#FFFFFF] border border-[#E4E5E2] rounded-2xl shadow-sm flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-bold text-xl text-[#1F2421]">Custom Enterprise</h3>
+                            <p class="text-xs text-[#66706B] mt-1">For high-throughput organizations</p>
+                            <ul class="my-6 space-y-3 text-sm text-[#66706B]">
+                                <li class="flex items-center"><span class="text-[#C65D32] mr-2">✓</span> Custom Cloud Deployments</li>
+                                <li class="flex items-center"><span class="text-[#C65D32] mr-2">✓</span> Bespoke AI Training & Rules</li>
+                                <li class="flex items-center"><span class="text-[#C65D32] mr-2">✓</span> Dedicated SLA & Priority Support</li>
+                            </ul>
+                        </div>
+                        <a href="src/pages/contact.html" class="block w-full py-2.5 text-center bg-[#1F2421] hover:bg-black text-white font-semibold rounded-lg text-sm transition">Contact Enterprise</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. Frequently Asked Questions (FAQ Accordion Component) -->
+        <section class="py-16 bg-[#FAF9F6] border-t border-[#E4E5E2]">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-10">
+                    <span class="text-[#C65D32] font-bold text-xs uppercase tracking-wider">Answers</span>
+                    <h2 class="text-3xl font-extrabold text-[#1F2421] mt-1">Frequently Asked Questions</h2>
+                </div>
+                <div class="space-y-4">
+                    <details class="group bg-[#FFFFFF] p-5 rounded-xl border border-[#E4E5E2]" open>
+                        <summary class="flex justify-between items-center font-bold text-[#1F2421] cursor-pointer list-none">
+                            <span>How does Hash Technologies differ from conventional ATS platforms?</span>
+                            <span class="text-[#C65D32] group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <p class="text-[#66706B] text-sm mt-3 leading-relaxed">
+                            Hash Technologies combines a complete recruitment workflow solution with open API endpoints, allowing teams to either use our clean interface or stream candidate data into their existing infrastructure.
+                        </p>
+                    </details>
+                    <details class="group bg-[#FFFFFF] p-5 rounded-xl border border-[#E4E5E2]">
+                        <summary class="flex justify-between items-center font-bold text-[#1F2421] cursor-pointer list-none">
+                            <span>Can we integrate Hash Technologies with our existing careers portal?</span>
+                            <span class="text-[#C65D32] group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <p class="text-[#66706B] text-sm mt-3 leading-relaxed">
+                            Yes. Hash Technologies provides flexible webhook triggers and RESTful endpoints so applicant data flows directly from your job board into screening pipelines.
+                        </p>
+                    </details>
+                    <details class="group bg-[#FFFFFF] p-5 rounded-xl border border-[#E4E5E2]">
+                        <summary class="flex justify-between items-center font-bold text-[#1F2421] cursor-pointer list-none">
+                            <span>How is applicant data protected?</span>
+                            <span class="text-[#C65D32] group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <p class="text-[#66706B] text-sm mt-3 leading-relaxed">
+                            All information is encrypted in transit and at rest using modern AES-256 protocols with strict data isolation for each registered workspace.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- 11. Primary Call to Action Banner -->
+        <section class="py-14 bg-gradient-to-r from-[#C65D32] to-[#963F24] text-white">
+            <div class="max-w-5xl mx-auto px-4 text-center space-y-6">
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Ready to Modernize Your Hiring Operations?</h2>
+                <p class="text-[#F4E3DA] max-w-2xl mx-auto text-base">
+                    Join growing businesses building responsive, intelligent candidate pipelines with Hash Technologies software solutions.
+                </p>
+                <div class="pt-2 flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="src/pages/signup.html" class="px-6 py-3 bg-[#FFFFFF] text-[#C65D32] font-bold rounded-lg hover:bg-[#FAF9F6] shadow transition">Register Workspace</a>
+                    <a href="src/pages/contact.html" class="px-6 py-3 bg-[#963F24] text-white font-bold rounded-lg hover:bg-[#C65D32] transition">Speak With an Engineer</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Global Footer -->
+    <footer class="bg-[#1F2421] text-[#66706B] py-12 border-t border-[#66706B]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="space-y-4">
+                <a href="index.html" class="flex items-center space-x-2 text-white">
+                    <span class="flex items-center justify-center w-7 h-7 rounded bg-[#C65D32] text-white font-extrabold text-sm">#</span>
+                    <span class="text-xl font-bold tracking-tight">Hash Technologies</span>
+                </a>
+                <p class="text-xs text-[#66706B] leading-relaxed">
+                    Hash Technologies develops software systems and modern AI-enabled recruitment solutions for forward-thinking organizations.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-white text-sm font-semibold mb-3">Navigation</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                    <li><a href="src/pages/about.html" class="hover:text-white transition">About Us</a></li>
+                    <li><a href="src/pages/contact.html" class="hover:text-white transition">Contact Support</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white text-sm font-semibold mb-3">Portal</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="src/pages/signin.html" class="hover:text-white transition">Sign In</a></li>
+                    <li><a href="src/pages/signup.html" class="hover:text-white transition">Create Account</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white text-sm font-semibold mb-3">Architecture</h4>
+                <p class="text-xs text-[#66706B] leading-relaxed">
+                    Compliant with University Web Engineering Assignment 01 guidelines. HTML5, CSS3, Tailwind CSS & Flowbite.
+                </p>
+                <span class="inline-block mt-3 text-[11px] text-[#66706B]">© 2026 Hash Technologies Software Inc.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Flowbite JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+</body>
+</html>

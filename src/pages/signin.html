@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | Hash Technologies Management Console</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Flowbite CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+</head>
+<body class="bg-[#FAF9F6] text-[#1F2421] antialiased flex flex-col min-h-screen">
+
+    <!-- Global Navigation Bar -->
+    <nav class="bg-[#FFFFFF] border-b border-[#E4E5E2] sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="../../index.html" class="flex items-center space-x-2.5">
+                <span class="flex items-center justify-center w-9 h-9 rounded-lg bg-[#C65D32] text-white font-extrabold text-xl shadow-sm">#</span>
+                <span class="self-center text-2xl font-bold tracking-tight text-[#1F2421]">Hash Technologies</span>
+            </a>
+            <div class="flex items-center md:order-2 space-x-3">
+                <a href="signin.html" class="text-[#C65D32] font-semibold text-sm px-4 py-2" aria-current="page">Sign In</a>
+                <a href="signup.html" class="text-white bg-[#C65D32] hover:bg-[#963F24] font-medium rounded-lg text-sm px-5 py-2.5 transition shadow-sm">Get Access</a>
+                <button data-collapse-toggle="navbar-main" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-main">
+                                <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-[#E4E5E2] rounded-lg bg-[#FAF9F6] md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-[#FFFFFF]">
+                    <li><a href="../../index.html" class="block py-2 px-3 text-[#66706B] hover:text-[#C65D32] md:p-0">Home</a></li>
+                    <li><a href="about.html" class="block py-2 px-3 text-[#66706B] hover:text-[#C65D32] md:p-0">About</a></li>
+                    <li><a href="contact.html" class="block py-2 px-3 text-[#66706B] hover:text-[#C65D32] md:p-0">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow flex items-center justify-center py-12 px-4">
+        <div class="w-full max-w-md">
+            <!-- 1. Flowbite Dismissible Alert Banner Component -->
+            <div id="securityAlert" class="flex items-center p-4 mb-4 text-xs text-blue-800 rounded-lg bg-blue-50 border border-blue-200" role="alert">
+                <svg class="flex-shrink-0 w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+                <span class="sr-only">Info</span>
+                <div>
+                    <span class="font-bold">Encrypted Session:</span> Enterprise OAuth 2.0 active.
+                </div>
+            </div>
+
+                        <!-- Card Container -->
+            <div class="bg-[#FFFFFF] p-6 sm:p-8 rounded-2xl border border-[#E4E5E2] shadow-sm">
+                <div class="text-center mb-6">
+                    <span class="flex items-center justify-center w-10 h-10 rounded-xl bg-[#C65D32] text-white font-extrabold text-xl mx-auto shadow-sm">#</span>
+                    <h1 class="text-2xl font-bold text-[#1F2421] tracking-tight mt-3">Access Portal</h1>
+                    <p class="text-xs text-[#66706B] mt-1">Sign in to manage recruitment pipelines & API tokens.</p>
+                </div>
+
+                <!-- 4. Flowbite Tab Component -->
+                <div class="mb-4 border-b border-[#E4E5E2]">
+                    <ul class="flex flex-wrap -mb-px text-xs font-semibold text-center" id="authTabs" data-tabs-toggle="#authTabContent" role="tablist">
+                        <li class="mr-2" role="presentation">
+                            <button class="inline-block p-2.5 border-b-2 rounded-t-lg border-[#C65D32] text-[#C65D32]" id="credentials-tab" data-tabs-target="#credentials" type="button" role="tab" aria-controls="credentials" aria-selected="true">Account Login</button>
+                        </li>
+                        <li class="mr-2" role="presentation">
+                            <button class="inline-block p-2.5 border-b-2 border-transparent text-[#66706B] hover:text-[#1F2421]" id="sso-tab" data-tabs-target="#sso" type="button" role="tab" aria-controls="sso" aria-selected="false">Enterprise SSO</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="authTabContent">
+                    <!-- Tab 1: Standard Credentials -->
+                    <div class="p-1" id="credentials" role="tabpanel" aria-labelledby="credentials-tab">
+                        <!-- 2. Flowbite Form Component -->
+                        <form class="space-y-4" action="#">
+                            <div>
+                                <label for="email" class="block mb-1 text-xs font-semibold text-[#1F2421]">Account Email</label>
+                                <input type="email" name="email" id="email" class="bg-[#FAF9F6] border border-[#E4E5E2] text-[#1F2421] text-sm rounded-lg focus:ring-[#C65D32] focus:border-[#C65D32] block w-full p-2.5" placeholder="admin@organization.com" required>
+                            </div>
+                            <div>
+                                <label for="password" class="block mb-1 text-xs font-semibold text-[#1F2421]">Password</label>
+                                <input type="password" name="password" id="password" placeholder="••••••••" class="bg-[#FAF9F6] border border-[#E4E5E2] text-[#1F2421] text-sm rounded-lg focus:ring-[#C65D32] focus:border-[#C65D32] block w-full p-2.5" required>
+                            </div>
+
+                            <!-- 3. Flowbite Checkbox & "Remember me" Component -->
+                            <div class="flex items-center justify-between text-xs">
+                                <div class="flex items-center">
+                                    <input id="remember" type="checkbox" class="w-4 h-4 border border-[#E4E5E2] rounded bg-[#FAF9F6] focus:ring-2 focus:ring-[#C65D32]/40">
+                                    <label for="remember" class="ml-2 text-[#66706B]">Remember me</label>
+                                </div>
+                                <!-- Modal Trigger for Password Reset -->
+                                <button type="button" data-modal-target="forgotModal" data-modal-toggle="forgotModal" class="text-[#C65D32] hover:underline font-semibold">Forgot key?</button>
+                            </div>
+
+                            <button type="submit" class="w-full text-white bg-[#C65D32] hover:bg-[#963F24] font-semibold rounded-lg text-sm px-5 py-3 text-center transition shadow-sm">
+                                Enter Console
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Tab 2: SSO -->
+                    <div class="hidden p-4 text-center text-xs text-[#66706B] space-y-4" id="sso" role="tabpanel" aria-labelledby="sso-tab">
+                        <p>Authenticate through your company's identity provider (Okta, Azure AD, SAML 2.0).</p>
+                        <input type="text" class="bg-[#FAF9F6] border border-[#E4E5E2] text-[#1F2421] text-sm rounded-lg focus:ring-[#C65D32] focus:border-[#C65D32] block w-full p-2.5" placeholder="company-domain.com">
+                        <button type="button" class="w-full bg-[#1F2421] hover:bg-black text-white font-semibold rounded-lg text-sm px-5 py-2.5 transition">Continue with SSO</button>
+                    </div>
+                </div>
+
+                <!-- Required Link: Don't have an account? Sign up. -->
+                <div class="mt-6 pt-4 border-t border-[#E4E5E2] text-center">
+                    <p class="text-sm text-[#66706B]">
+                        Don't have an account? <a href="signup.html" class="font-semibold text-[#C65D32] hover:underline">Sign up.</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+                <!-- 5. Flowbite Modal Component (Forgot Password Modal) -->
+        <div id="forgotModal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative w-full max-w-md max-h-full">
+                <div class="relative bg-[#FFFFFF] rounded-2xl shadow-xl border border-[#E4E5E2]">
+                    <div class="flex items-center justify-between p-4 border-b border-[#E4E5E2]">
+                        <h3 class="text-sm font-bold text-[#1F2421]">Reset Credentials</h3>
+                        <button type="button" class="text-[#66706B] bg-transparent hover:bg-[#FAF9F6] hover:text-[#1F2421] rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center" data-modal-hide="forgotModal">
+                            ✕
+                        </button>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <p class="text-xs text-[#66706B] leading-relaxed">
+                            Enter your registered administrator email to receive a password reset link or generate an emergency recovery token.
+                        </p>
+                        <input type="email" class="bg-[#FAF9F6] border border-[#E4E5E2] text-[#1F2421] text-sm rounded-lg block w-full p-2.5" placeholder="admin@organization.com">
+                        <button type="button" data-modal-hide="forgotModal" class="w-full text-white bg-[#C65D32] hover:bg-[#963F24] font-semibold rounded-lg text-sm px-5 py-2.5 text-center">
+                            Dispatch Reset Instructions
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+        <!-- Global Footer -->
+    <footer class="bg-[#1F2421] text-[#66706B] py-12 border-t border-[#66706B]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="space-y-4">
+                <a href="../../index.html" class="flex items-center space-x-2 text-white">
+                    <span class="flex items-center justify-center w-7 h-7 rounded bg-[#C65D32] text-white font-extrabold text-sm">#</span>
+                    <span class="text-xl font-bold tracking-tight">Hash Technologies</span>
+                </a>
+                <p class="text-xs text-[#66706B] leading-relaxed">
+                    Hash Technologies develops software systems and modern AI-enabled recruitment solutions for forward-thinking organizations.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-white text-sm font-semibold mb-3">Navigation</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="../../index.html" class="hover:text-white transition">Home</a></li>
+                    <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                    <li><a href="contact.html" class="hover:text-white transition">Contact Support</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white text-sm font-semibold mb-3">Portal</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="signin.html" class="hover:text-white transition">Sign In</a></li>
+                    <li><a href="signup.html" class="hover:text-white transition">Create Account</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white text-sm font-semibold mb-3">Architecture</h4>
+                <p class="text-xs text-[#66706B] leading-relaxed">
+                    Compliant with University Web Engineering Assignment 01 guidelines.
+                </p>
+                <span class="inline-block mt-3 text-[11px] text-[#66706B]">© 2026 Hash Technologies Software Inc.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Flowbite JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+</body>
+</html>
